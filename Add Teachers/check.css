@@ -1,0 +1,62 @@
+/* Reset default styles */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #158d73;
+    padding: 10px
+    /* Style navigation links */
+}
+
+/* Testimonial section styles */
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Gap between cards */
+    align-items: center;
+    grid-gap: 20px;
+    left: 10px;
+    perspective: 1000px; /* Perspective value determines the depth of the 3D effect */
+    box-shadow: 10 10 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+
+
+
+    max-width: 300px;
+    margin: auto;
+    padding: 20px;
+}
+
+.testimonial {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+}
