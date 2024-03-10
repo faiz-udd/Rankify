@@ -1,16 +1,59 @@
 /* Add some style to the navigation bar */
-.navbar {
-    display: flex;
-    align-items: center;
-    background-color: #158d73;
-    padding: 10px;
 
+/* styles.css */
+.navbar {
+    background-color:rgb(6, 8, 7);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 5;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font: bold;
+}
+.navbar li:hover{
+    background-color: rgb(219, 217, 231);
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-bar button {
+    background-color: white;
+    color: black;
+    border-radius: 10;
+    padding: 10px;
+    cursor: pointer;
+}
+.search-bar button:hover{
+background-color: #07a744;
+}
+.sign-in, .sign-up {
+    background-color: #6B8E23;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
 
 /* Add some style to the logo */
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -32,8 +75,45 @@
 }
 
 .button:hover {
-    background-color: #333;
+    background-color: #07a744;
     color: #fff;
+}
+/* Navigation bar ends here */
+
+/* Styles to the slider goes here. */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+.content {
+    padding: 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Add some style to the main body */
@@ -42,24 +122,35 @@
     flex-direction: column;
     align-items: last baseline;
     grid-gap: 20px;
-    margin: 20px;
-    background-color: #fff;
+    margin: 0px;
+    margin-top: 20px;
+    background-color: #aae9b8;
+    align-items: center;
+    margin-bottom: 5px;
 }
-#topheading {
-    align-items: end;
+#ViewallTeachersBtn{
+    margin-bottom: 10px;
+    width: fit-content;
+    color: #fdfdfd;
+    background-color: #0b740b;
 
 }
+
+/* Add some styles to the Teachers Ranking_Frame */
 .rankingFrame{
     
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    display: flex;
+    /* grid-template-columns: repeat(5, 1fr); Three columns with equal width */
     gap: 20px; /* Gap between cards */
     align-items: stretch;
     grid-gap: 20px;
     position: relative;
     left: 10px;
+    margin-top: 10vh;
     perspective: 1000px; /* Perspective value determines the depth of the 3D effect */
     box-shadow: 10 10 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 100%;
+
     
 }
 
@@ -70,14 +161,14 @@
     align-items: last baseline;
     border: 1px solid #333;
     border-radius: 4%;
-    padding: 10px;
+    padding: 20px;
     background-color: #bde6dd;
-    
+    width: 400px;
 }
 
 .card img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 }
 
@@ -104,26 +195,54 @@
     background-color: #333;
     color: #fff;
 }
-footer {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-footer p{
-    display: flex;
-    text-align: center;
-    
-}
 
-#logoFooter{
-    width: 10px;
-    height: 10px;
-}
 
-/* If using Font Awesome for social icons */
-.fab {
-   font-size: 24px; /* Adjust as needed */
-}
 
+
+/* Section 2 styles goes here. */
+.image-paragraph-section {
+    background-color: #f9f9f9; /* Background color for the section */
+    padding: 50px 0; /* Adjust the padding as needed */
+  }
+  
+  .container {
+    max-width: 1200px; /* Adjust container width as needed */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Clearfix */
+    box-shadow: #333;
+    border-color: black;
+    border-radius: 2px;
+    padding-left: 10px;
+  }
+  
+  .content-wrapper {
+    display: flex; /* Use flexbox for layout */
+
+  }
+  
+  .image {
+    flex: 1; /* Grow to fill available space */
+  }
+  
+  .image img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+    max-height: 100%;
+    display: block; /* Ensure the image doesn't have any extra space */
+  }
+  
+  .paragraph {
+    flex: 1; /* Grow to fill available space */
+    padding-left: 60px; /* Adjust spacing between image and paragraph */
+  }
+  .paragraph h2{
+    font-size: 25px;
+    color:black;
+  }
+  
+  .paragraph p {
+    font-size: 20px; /* Adjust font size as needed */
+    line-height: 1.6; /* Adjust line height as needed */
+    color: #333; /* Paragraph text color */
+  }
+  
+  

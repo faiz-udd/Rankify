@@ -3,30 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teacher Ranking</title>
+    <meta name="@copyright" content="Faiz uddin">
+    <title>Rankify</title>
     <link rel="stylesheet" href="/HomePage/styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="description" content="A jquery light weight image slideshow plugin. Full width and fully responsive simple image slider with fade in and fade out effect.">
+    <meta name="keywords" content="jquery slideshow, full width slideshow, simple slideshow, simple image slider, responsive slider, full width responsive slider">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="EN">
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/HomePage/skdslider/src/skdslider.min.js"></script>
+    <link href="/HomePage/skdslider/src/skdslider.css" rel="stylesheet">
+    <link rel="stylesheet" href="/HomePage/footer/footer.css">
+    <script src="/HomePage/footer/footer.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            jQuery('#demo2').skdslider({
+            slideSelector: '.slide',
+            delay:5000, 
+            animationSpeed: 1000,
+            showNextPrev:true,
+            showPlayButton:false,
+            autoSlide:true,
+            animationType:'sliding'
+            });
+        });
+    </script>
+<style type="text/css">
+  body { margin:0; padding:0;}
+  .demo-code{ background-color:#ffffff; border:1px solid #333333; display:block; padding:10px;}
+  .option-table td{ border-bottom:1px solid #eeeeee;}
+</style>
 </head>
+
 <body>
-  <div class="navbar">
-    <img src="/Image/logo.jpeg" alt="Logo" class="logo">
-    <div class="buttons">
-        <a href="/SignupPage/signup.html" class="button" id="signupBtn">Sign Up</a>
+    <!-- Our Navigation Bar -->
+    <div class="navbar">
+        <img src="/Image/logo.jpeg" alt="Logo" class="logo">
+        <ul>
+            <li class="navList"><a href="/HomePage/index.html" id="homeNav">HOME</a></li>
+            <li class="navList"><a href="/TeachersRanking/tRanking.html" id="teacherRankingNav">TEACHERS RANKING</a></li>
+            <li class="navList"><a href="#universitiesRanking" id="universitiesRankingNav">UNIVERSITIES RANKINGS</a></li>
+        </ul>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button id="SearchBtn">Search</button>
+        </div>
         <a href="/LoginPage/login.html" class="button" id="loginBtn">Login</a>
+        <a href="/SignupPage/signup.html" class="button" id="signupBtn">Sign Up</a>
     </div>
+    <!-- Slider View -->
+    <div class="slideFrame">
+        <div id="demo2">
+          <div class="slide">
+              <img src="/HomePage/skdslider/slides/1.jpg" />
+              <!--Slider Description example-->
+               <div class="slide-desc">
+                  <h1>Students Feedback</h1>
+                  <p>"Your feedback shapes the future! By sharing your experiences, you propel the best teachers and universities to the top, guiding future students towards informed decisions and ensuring excellence in education" </p>
+                  <a href="/feedback-On_Teacher/feedback.html" class="button"id="GiveFeedbackSlideBtn">Give Feedback</a>
+                  
+                </div>
+          </div>
+          <div class="slide">
+            <img src="/HomePage/skdslider/slides/4.jpg" />
+             <div class="slide-desc">
+                <h1>Best Educators</h1>
+                <p>"Explore Student Feedback on Teachers: Dive into a wealth of valuable insights from students themselves! Navigate our user-friendly platform to uncover detailed reviews and ratings about professors, offering firsthand accounts of teaching styles, approachability, and more. Let student feedback empower your decision-making process as you seek out the best educators for your academic journey." </p>
+                <a href="/TeachersRanking/tRanking.html" class="button"id="teacherRankingSlideBtn">View our Best Educators</a>
+            </div>
+          </div>
+          <div class="slide"><img src="/HomePage/skdslider/slides/2.jpg" />
+            <div class="slide-desc">
+                <h1>Best Universities</h1>
+                <p>"Unlock the Best Universities Through Student Experience! Let peer reviews guide your choice for academic excellence. Explore top-rated institutions chosen by students like you!" </p>
+                <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Explore Best Universities</button>
+            </div>
+          </div>
+        </div>
+    </div>
+   
+<!-- Our Content Frame -->
+<div class="main">
+            <div class="rankingFrame" id="rankingFrame"></div>
+            <a href="/TeachersRanking/tRanking.html" class="button"id="ViewallTeachersBtn">View all our Educators</a>
 </div>
-    <div class="main">
-        <h1 id="topheading">Top 10 Teachers in IIUI</h1>
-      <div class="rankingFrame" id="rankingFrame">
-      </div>
-      <div class="All Teachers">
-
-      </div>
+    <div class="go-to-Frame" id="#">
+    <section class="image-paragraph-section">
+        <div class="container">"
+            <div class="content-wrapper">
+                <div class="image">
+                    <img src="/HomePage/skdslider/slides/6.jpg" alt="Your Image">
+                </div>
+                <div class="paragraph">
+                    <h2><strong>Embarking on Your University Journey in Pakistan? Find Your Perfect Fit Here!</strong></h2>
+                    <p> <strong>Joining a university in Pakistan? Discover the best fit for you by exploring our comprehensive rankings and firsthand student feedback on professors and institutions. With over 450,000 graduates yearly, make an informed decision for your academic journey.</strong></p>
+                    <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Discover More</button>
+                </div>
+            </div>
+        </div>
+    </section>
     </div>
-
-    <footer>
-        <p>© 2024 Rankify IIUI Pakistan. All Rights Reserved</p>
+    <div class="go-to-Frame" id="#">
+        <section class="image-paragraph-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="paragraph">
+                        <h2><strong>Embarking on Your University Journey in Pakistan? Find Your Perfect Fit Here!</strong></h2>
+                        <p> <strong>Joining a university in Pakistan? Discover the best fit for you by exploring our comprehensive rankings and firsthand student feedback on professors and institutions. With over 450,000 graduates yearly, make an informed decision for your academic journey.</strong></p>
+                        <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Discover More</button>
+                    </div>
+                    <div class="image">
+                        <img src="/HomePage/skdslider/slides/5.jpg" alt="Your Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+    
+    
+<!-- Footer goes Here -->
+    <footer class="footer">
+        <div class= "container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="about-content">
+                        <h2>About Us</h2>
+                        <p>Welcome to our platform where students' voices matter! We are dedicated to providing a transparent and reliable platform where students can rank universities and teachers based on their experiences and feedback.</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1234567890</p>
+                </div>
+            </div>
+            <p>© 2024 Rankify IIUI Pakistan. All Rights Reserved</p>
+        </div>
+        
     </footer>
-
     <script src="/HomePage/script.js"></script>
 </body>
 </html>

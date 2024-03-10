@@ -1,8 +1,12 @@
 
 let SignUpBtn = document.querySelector("#singUpBtn");
 let loginBtn = document.querySelector("#loginBtn");
+let viewallTeacherBtn = document.querySelector("#ViewallTeachersBtn");
+let viewTeachers=document.querySelector("#GiveFeedbackSlideBtn")
+let homeNavigation = document.querySelector("#homeNav");
+let teacherListNavigation = document.querySelector("#teacherRankingNav");
 
-// Define Teacher class
+  // Define Teacher class
 function Teacher(name, department, position, specialization, imageSrc, profileLink, rank) {
     this.name = name;
     this.department = department;
@@ -12,14 +16,14 @@ function Teacher(name, department, position, specialization, imageSrc, profileLi
     this.profileLink = profileLink;
     this.rank = rank;
 }
-
 // Array of teachers
 let teachers = [
-    new Teacher("Dr Qaiser Javeed", "Computer Science", "Professor", "Artificial Intelligence", "/Image/qaiser-javeed.jpg", "https://www.example.com/qaiser-javeed", 5),
+    new Teacher("Dr Qaiser Javeed", "Computer Science", "Professor", "Artificial Intelligence", "/Image/qaiser-javeed.jpg", "https://www.example.com/qaiser-javeed", 1),
     new Teacher("Dr Syed Saqlain", "Mathematics", "Associate Professor", "Algebra", "/Image/syed-saqlain.jpg", "https://www.example.com/syed-saqlain", 2),
     new Teacher("Mr Idrees Ahmad", "Computing", "Lecturer", "Automated-Software Testing", "/Image/idrees-ahmad.jpg", "https://www.example.com/idrees-ahmad", 3),
     new Teacher("Dr Tehmina Amjad", "Mathematics", "Associate Professor", "Algebra", "/Image/tehmina-amjad.jpg", "https://www.example.com/tehmina-amjad", 4),
-    new Teacher("Dr Tabassum Kanwal", "Mathematics", "Associate Professor", "Algebra", "/Image/tabassum-kanwal.png", "https://www.example.com/tabassum-kanwal", 1)
+    new Teacher("Dr Tabassum Kanwal", "Mathematics", "Associate Professor", "Algebra", "/Image/tabassum-kanwal.png", "https://www.example.com/tabassum-kanwal", 5),
+    
 ];
 
 // Function to sort teachers based on their ranking
@@ -90,5 +94,22 @@ loginBtn.addEventListener("click", function(event) {
     event.preventDefault(); // Prevent the default behavior of the link
     window.open("login.html", "_blank"); // Open the login page in a new tab
 });
+viewallTeacherBtn.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+    window.open("tRanking.html", "_blank"); // Open the login page in a new tab
+});
+viewTeachers.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+    window.open("tRanking.html", "_blank"); // Open the login page in a new tab
+});
+homeNavigation.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+    window.open("index.html", "_blank"); // Open the login page in a new tab
+});
+teacherListNavigation.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+    window.open("tRanking.html", "_blank"); // Open the login page in a new tab
+});
+
 
 
