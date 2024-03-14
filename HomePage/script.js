@@ -7,8 +7,9 @@ let homeNavigation = document.querySelector("#homeNav");
 let teacherListNavigation = document.querySelector("#teacherRankingNav");
 
   // Define Teacher class
-function Teacher(name, department, position, specialization, imageSrc, profileLink, rank) {
+function Teacher(name,faculty, department, position, specialization, imageSrc, profileLink, rank) {
     this.name = name;
+    this.faculty= faculty;
     this.department = department;
     this.position = position;
     this.specialization = specialization;
@@ -18,11 +19,11 @@ function Teacher(name, department, position, specialization, imageSrc, profileLi
 }
 // Array of teachers
 let teachers = [
-    new Teacher("Dr Qaiser Javeed", "Computer Science", "Professor", "Artificial Intelligence", "/Image/qaiser-javeed.jpg", "https://www.example.com/qaiser-javeed", 1),
-    new Teacher("Dr Syed Saqlain", "Mathematics", "Associate Professor", "Algebra", "/Image/syed-saqlain.jpg", "https://www.example.com/syed-saqlain", 2),
-    new Teacher("Mr Idrees Ahmad", "Computing", "Lecturer", "Automated-Software Testing", "/Image/idrees-ahmad.jpg", "https://www.example.com/idrees-ahmad", 3),
-    new Teacher("Dr Tehmina Amjad", "Mathematics", "Associate Professor", "Algebra", "/Image/tehmina-amjad.jpg", "https://www.example.com/tehmina-amjad", 4),
-    new Teacher("Dr Tabassum Kanwal", "Mathematics", "Associate Professor", "Algebra", "/Image/tabassum-kanwal.png", "https://www.example.com/tabassum-kanwal", 5),
+    new Teacher("Dr Qaiser Javeed", "Computing", "Computer Science", "Professor", "Artificial Intelligence", "/Image/qaiser-javeed.jpg", "https://www.example.com/qaiser-javeed", 1),
+    new Teacher("Dr Syed Saqlain", "Computing", "Software Enginnering", "Associate Professor", "Algebra", "/Image/syed-saqlain.jpg", "https://www.example.com/syed-saqlain", 2),
+    new Teacher("Mr Idrees Ahmad", "Computing", "Computer Science", "Lecturer", "Automated-Software Testing", "/Image/idrees-ahmad.jpg", "https://www.example.com/idrees-ahmad", 3),
+    new Teacher("Dr Tehmina Amjad", "Computing", "Information Technology", "Associate Professor", "Algebra", "/Image/tehmina-amjad.jpg", "https://www.example.com/tehmina-amjad", 4),
+    new Teacher("Dr Tabassum Kanwal","Computing",  "Computer Science", "Associate Professor", "Algebra", "/Image/tabassum-kanwal.png", "https://www.example.com/tabassum-kanwal", 5),
     
 ];
 
@@ -54,6 +55,9 @@ function createTeacherCards() {
         let name = document.createElement("h3");
         name.textContent = teacher.name;
 
+        let faculty = document.createElement("p");
+        faculty.textContent = `Faculty: ${teacher.faculty}`;
+
         let department = document.createElement("p");
         department.textContent = `Department: ${teacher.department}`;
 
@@ -71,11 +75,11 @@ function createTeacherCards() {
         card.appendChild(img);
         card.appendChild(rank);
         card.appendChild(name);
+        card.appendChild(faculty);
         card.appendChild(department);
         card.appendChild(designation);
         card.appendChild(specialization);
         card.appendChild(readMoreLink);
-
         rankingFrame.appendChild(card);
     });
 }

@@ -1,39 +1,40 @@
-
-
-.container {
- 
+body{
+  background-color: azure;
 }
-.header{
+main{
+  background-color: #F2F4F8;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+header{
+  background-color: #07684b;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  color: white;
   height: fit-content;
 }
-.TeacherFrame{
-  padding: 20px;
+.filters{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: fit-content;
-  margin-left: 100px;
+  padding: 10px;
+  align-self: center;
+  
 }
-
-
-.filters {
-  margin-bottom: 20px;
+.teacher-list{
+  display: flex;
+  grid-gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
 }
-
-.teacher-container {
-
-}
-
 .teacher {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #98f1d7;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 20%;
 }
 
 .teacher img {
@@ -58,13 +59,21 @@
 
 .teacher-details a {
   display: block;
-  color: blue;
   text-decoration: none;
-  border: #07684b;
+  color: blue;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .teacher-details button{
-  padding: 10px;
-  align-self: center;
-  align-items: center;
+  background-color:rgb(9, 156, 77);
+  border: black;
+  border-radius: 5%;
+  box-shadow: inset;
+  color: white;
+  font-size: 18px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  cursor: pointer;
 
 }

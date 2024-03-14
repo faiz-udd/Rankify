@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="@copyright" content="Faiz uddin">
-    <title>Rankify</title>
+    <title>Rankify | Home 
+    </title>
     <link rel="stylesheet" href="/HomePage/styles.css">
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <meta name="description" content="A jquery light weight image slideshow plugin. Full width and fully responsive simple image slider with fade in and fade out effect.">
@@ -39,92 +40,102 @@
 
 <body>
     <!-- Our Navigation Bar -->
-    <div class="navbar">
-        <img src="/Image/logo.jpeg" alt="Logo" class="logo">
-        <ul>
-            <li class="navList"><a href="/HomePage/index.html" id="homeNav">HOME</a></li>
-            <li class="navList"><a href="/TeachersRanking/tRanking.html" id="teacherRankingNav">TEACHERS RANKING</a></li>
-            <li class="navList"><a href="#universitiesRanking" id="universitiesRankingNav">UNIVERSITIES RANKINGS</a></li>
-        </ul>
-        
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button id="SearchBtn">Search</button>
-        </div>
-        <a href="/LoginPage/login.html" class="button" id="loginBtn">Login</a>
-        <a href="/SignupPage/signup.html" class="button" id="signupBtn">Sign Up</a>
-    </div>
-    <!-- Slider View -->
-    <div class="slideFrame">
-        <div id="demo2">
-          <div class="slide">
-              <img src="/HomePage/skdslider/slides/1.jpg" />
-              <!--Slider Description example-->
-               <div class="slide-desc">
-                  <h1>Students Feedback</h1>
-                  <p>"Your feedback shapes the future! By sharing your experiences, you propel the best teachers and universities to the top, guiding future students towards informed decisions and ensuring excellence in education" </p>
-                  <a href="/feedback-On_Teacher/feedback.html" class="button"id="GiveFeedbackSlideBtn">Give Feedback</a>
-                  
-                </div>
-          </div>
-          <div class="slide">
-            <img src="/HomePage/skdslider/slides/4.jpg" />
-             <div class="slide-desc">
-                <h1>Best Educators</h1>
-                <p>"Explore Student Feedback on Teachers: Dive into a wealth of valuable insights from students themselves! Navigate our user-friendly platform to uncover detailed reviews and ratings about professors, offering firsthand accounts of teaching styles, approachability, and more. Let student feedback empower your decision-making process as you seek out the best educators for your academic journey." </p>
-                <a href="/TeachersRanking/tRanking.html" class="button"id="teacherRankingSlideBtn">View our Best Educators</a>
-            </div>
-          </div>
-          <div class="slide"><img src="/HomePage/skdslider/slides/2.jpg" />
-            <div class="slide-desc">
-                <h1>Best Universities</h1>
-                <p>"Unlock the Best Universities Through Student Experience! Let peer reviews guide your choice for academic excellence. Explore top-rated institutions chosen by students like you!" </p>
-                <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Explore Best Universities</button>
-            </div>
-          </div>
-        </div>
-    </div>
-   
-<!-- Our Content Frame -->
-<div class="main">
-            <div class="rankingFrame" id="rankingFrame"></div>
-            <a href="/TeachersRanking/tRanking.html" class="button"id="ViewallTeachersBtn">View all our Educators</a>
-</div>
-    <div class="go-to-Frame" id="#">
-    <section class="image-paragraph-section">
-        <div class="container">"
-            <div class="content-wrapper">
-                <div class="image">
-                    <img src="/HomePage/skdslider/slides/6.jpg" alt="Your Image">
-                </div>
-                <div class="paragraph">
-                    <h2><strong>Embarking on Your University Journey in Pakistan? Find Your Perfect Fit Here!</strong></h2>
-                    <p> <strong>Joining a university in Pakistan? Discover the best fit for you by exploring our comprehensive rankings and firsthand student feedback on professors and institutions. With over 450,000 graduates yearly, make an informed decision for your academic journey.</strong></p>
-                    <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Discover More</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    </div>
-    <div class="go-to-Frame" id="#">
-        <section class="image-paragraph-section">
-            <div class="container">
-                <div class="content-wrapper">
-                    <div class="paragraph">
-                        <h2><strong>Embarking on Your University Journey in Pakistan? Find Your Perfect Fit Here!</strong></h2>
-                        <p> <strong>Joining a university in Pakistan? Discover the best fit for you by exploring our comprehensive rankings and firsthand student feedback on professors and institutions. With over 450,000 graduates yearly, make an informed decision for your academic journey.</strong></p>
-                        <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Discover More</button>
+    <nav class="navbar">
+        <img src="/Image/logo.jpeg" alt="logo" class="logo" style="margin: left 50px; ;">
+        <span class="navigationLists">
+            <a class="navList" href="/HomePage/index.html" id="homeNav"><strong>HOME</strong></a>
+            <a class="navList" href="/TeachersRanking/tRanking.html" id="teacherRankingNav"><strong>RANKING EDUCATORS</strong></a>
+            <a class="navList" href="#" id="universitiesRankingNav"><strong>UNIVERSITIES RANKINGS</strong></a>
+        </span>
+        <span class="navBtns">
+            <a class="navbarBtn" href="/LoginPage/login.html"  id="loginBtn">Login</a>
+            <a class ="navbarBtn" href="/SignupPage/signup.html" id="signupBtn">Sign Up</a>
+        </span>
+    </nav>
+    <!-- our Navigation bar Ends Here -->
+    <!-- Our main Content tag starts here. -->
+    <main >
+        <!-- Slider Section -->
+        <section class ="Slider">
+            <div class="slideFrame">
+                <div id="demo2">
+                  <div class="slide">
+                      <img src="/HomePage/skdslider/slides/1.jpg" />
+                      <!--Slider Description example-->
+                       <div class="slide-desc">
+                          <h1>Students Feedback</h1>
+                          <p>"Your feedback shapes the future! By sharing your experiences, you propel the best teachers and universities to the top, guiding future students towards informed decisions and ensuring excellence in education" </p>
+                          <a href="/feedback-On_Teacher/feedback.html" class="SlideBtn"id="GiveFeedbackSlideBtn">Give Feedback</a>
+                          
+                        </div>
+                  </div>
+                  <div class="slide">
+                    <img src="/HomePage/skdslider/slides/4.jpg" />
+                     <div class="slide-desc">
+                        <h1>Best Educators</h1>
+                        <p>"Explore Student Feedback on Teachers: Dive into a wealth of valuable insights from students themselves! Navigate our user-friendly platform to uncover detailed reviews and ratings about professors, offering firsthand accounts of teaching styles, approachability, and more. Let student feedback empower your decision-making process as you seek out the best educators for your academic journey." </p>
+                        <a href="/TeachersRanking/tRanking.html" class="SlideBtn"id="teacherRankingSlideBtn">View our Best Educators</a>
                     </div>
-                    <div class="image">
-                        <img src="/HomePage/skdslider/slides/5.jpg" alt="Your Image">
+                  </div>
+                  <div class="slide"><img src="/HomePage/skdslider/slides/2.jpg" />
+                    <div class="slide-desc">
+                        <h1>Best Universities</h1>
+                        <p>"Unlock the Best Universities Through Student Experience! Let peer reviews guide your choice for academic excellence. Explore top-rated institutions chosen by students like you!" </p>
+                        <button class ="SlideBtn" id="goTofeedbackStudentFeedbackPageBtn">Explore Best Universities</button>
                     </div>
+                  </div>
                 </div>
+            </div>
+
+        </section>
+        <!-- Slide section ends here -->
+        <!-- Teacher Ranking Section Starts Here. -->
+        <section class="Top-10-teachers">
+            <div class="main">
+                <div class="rankingFrame" id="rankingFrame"></div>
+                <a href="/TeachersRanking/tRanking.html" class="viewAllBtn"id="ViewallTeachersBtn">View all our Educators</a>
             </div>
         </section>
-      </div>
-    
-    
-<!-- Footer goes Here -->
+        <!-- Techer Ranking Ends here. -->
+        <!-- Our General Content section starts here. -->
+        <section class="general-content">
+            <div class="go-to-Frame" id="#">
+                <section class="image-paragraph-section">
+                    <div class="container">"
+                        <div class="content-wrapper">
+                            <div class="image">
+                                <img src="/HomePage/skdslider/slides/6.jpg" alt="Your Image">
+                            </div>
+                            <div class="paragraph">
+                                <h2><strong>Embarking on Your University Journey in Pakistan? Find Your Perfect Fit Here!</strong></h2>
+                                <p> <strong>Joining a university in Pakistan? Discover the best fit for you by exploring our comprehensive rankings and firsthand student feedback on professors and institutions. With over 450,000 graduates yearly, make an informed decision for your academic journey.</strong></p>
+                                <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Discover More</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                </div>
+                <div class="go-to-Frame" id="#">
+                    <section class="image-paragraph-section">
+                        <div class="container">
+                            <div class="content-wrapper">
+                                <div class="paragraph">
+                                    <h2><strong>Embarking on Your University Journey in Pakistan? Find Your Perfect Fit Here!</strong></h2>
+                                    <p> <strong>Joining a university in Pakistan? Discover the best fit for you by exploring our comprehensive rankings and firsthand student feedback on professors and institutions. With over 450,000 graduates yearly, make an informed decision for your academic journey.</strong></p>
+                                    <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Discover More</button>
+                                </div>
+                                <div class="image">
+                                    <img src="/HomePage/skdslider/slides/5.jpg" alt="Your Image">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                  </div>
+        </section>
+        <!-- general content section ends here. -->
+    </main>
+     <!-- Our Main section ends here. -->
+     <!-- Footer goes Here -->
     <footer class="footer">
         <div class= "container">
             <div class="footer-content">
@@ -151,7 +162,6 @@
             </div>
             <p>© 2024 Rankify IIUI Pakistan. All Rights Reserved</p>
         </div>
-        
     </footer>
     <script src="/HomePage/script.js"></script>
 </body>

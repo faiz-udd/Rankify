@@ -2,45 +2,40 @@
 
 /* styles.css */
 .navbar {
-    background-color:rgb(6, 8, 7);
+    background-color:rgb(4, 92, 48);
     color: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
+    padding: 20px;
+}
+.navigationLists{
+    margin-left: 30px;
+}
+.navList{
     align-items: center;
-}
-.navbar ul {
-    list-style-type: none;
-    margin: 5;
-    padding: 0;
-}
-
-.navbar li {
-    display: inline;
-    margin-right: 10px;
+    margin-left: 20px;
     cursor: pointer;
     font-family: sans-serif;
     font: bold;
+    color: black;
 }
-.navbar li:hover{
+.navList:hover{
     background-color: rgb(219, 217, 231);
 }
-
-.search-bar input[type="text"] {
-    padding: 5px;
-    border-radius: 5px;
-    border: none;
+.navBtns{
+margin-left: 50%;
 }
-
-.search-bar button {
-    background-color: white;
-    color: black;
-    border-radius: 10;
-    padding: 10px;
-    cursor: pointer;
+.navbarBtn{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    background-color: #ffffff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 10%;
+    font-style: bold;
 }
-.search-bar button:hover{
-background-color: #07a744;
+.navbarBtn:hover{
+    background-color: #2214a1;
+    color: #fff;
 }
 .sign-in, .sign-up {
     background-color: #6B8E23;
@@ -56,24 +51,6 @@ background-color: #07a744;
     height: 50px;
     border-radius: 50%;
 }
-
-/* Add some style to the sign up and login buttons */
-.buttons {
-    margin-left: auto;
-    margin-right: 20px;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid #333;
-    background-color: #ffffff;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5%;
-    font-style: bold;
-}
-
 .button:hover {
     background-color: #07a744;
     color: #fff;
@@ -106,9 +83,8 @@ background-color: #07a744;
 .content {
     padding: 20px;
 }
-
-button {
-    background-color: #333;
+.SlideBtn {
+    background-color:rgb(5, 104, 35);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -128,12 +104,14 @@ button {
     align-items: center;
     margin-bottom: 5px;
 }
-#ViewallTeachersBtn{
-    margin-bottom: 10px;
-    width: fit-content;
-    color: #fdfdfd;
-    background-color: #0b740b;
-
+.viewAllBtn{
+    
+    background-color:rgb(5, 104, 35);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* Add some styles to the Teachers Ranking_Frame */
@@ -223,6 +201,15 @@ button {
   .image {
     flex: 1; /* Grow to fill available space */
   }
+
+  .button{
+    background-color:rgb(40, 44, 41);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
   
   .image img {
     max-width: 100%; /* Make sure the image doesn't exceed its container */

@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teacher Ranking</title>
+  <title>Rankify | TeacherRanking</title>
   <link rel="stylesheet" href="tRanking.css">
 </head>
 <body>
-  <div class="container">
-    
-    <div class="header" id="header">
-      <h1>Teacher Ranking</h1>
+  <!-- Header goes here. -->
+  <header>
+    <h1>Teacher Ranking List</h1>
+  </header>
+  <!-- Here Ends here. -->
+  <!-- main section starts here. -->
+  <main>
     <div class="filters">
       <label for="faculty">Select Faculty:</label>
       <select id="faculty">
         <option value="all">All</option>
-        <option value="Computer Science">Computer Science</option>
-        <option value="Mathematics">Mathematics</option>
         <option value="Computing">Computing</option>
         <!-- Add more faculties as needed -->
       </select>
@@ -28,11 +29,7 @@
       </select>
     </div>
     <div id="teacher-list" class="teacher-list"></div>
-    </div>
-    <div class="TeacherFrame" id="teacherFrame">
-        <!-- Teachers will be displayed here -->
-    </div>
-  </div>
+  </main>
   <script src="tranking.js"></script>
 </body>
 </html>
