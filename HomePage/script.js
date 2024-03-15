@@ -7,7 +7,7 @@ let homeNavigation = document.querySelector("#homeNav");
 let teacherListNavigation = document.querySelector("#teacherRankingNav");
 
   // Define Teacher class
-function Teacher(name,faculty, department, position, specialization, imageSrc, profileLink, rank) {
+function Teacher(name,faculty, department, position, specialization, imageSrc, profileLink, rating) {
     this.name = name;
     this.faculty= faculty;
     this.department = department;
@@ -15,28 +15,29 @@ function Teacher(name,faculty, department, position, specialization, imageSrc, p
     this.specialization = specialization;
     this.imageSrc = imageSrc;
     this.profileLink = profileLink;
-    this.rank = rank;
+    this.rating = rating;
 }
 // Array of teachers
 let teachers = [
-    new Teacher("Dr Qaiser Javeed", "Computing", "Computer Science", "Professor", "Artificial Intelligence", "/Image/qaiser-javeed.jpg", "https://www.example.com/qaiser-javeed", 1),
-    new Teacher("Dr Syed Saqlain", "Computing", "Software Enginnering", "Associate Professor", "Algebra", "/Image/syed-saqlain.jpg", "https://www.example.com/syed-saqlain", 2),
-    new Teacher("Mr Idrees Ahmad", "Computing", "Computer Science", "Lecturer", "Automated-Software Testing", "/Image/idrees-ahmad.jpg", "https://www.example.com/idrees-ahmad", 3),
+    new Teacher("Dr Qaiser Javeed", "Computing", "Computer Science", "Professor", "Artificial Intelligence", "/Image/qaiser-javeed.jpg", "https://www.example.com/qaiser-javeed", 3),
+    new Teacher("Dr Syed Saqlain", "Computing", "Software Enginnering", "Associate Professor", "Algebra", "/Image/syed-saqlain.jpg", "https://www.example.com/syed-saqlain", 4),
+    new Teacher("Mr Idrees Ahmad", "Computing", "Computer Science", "Lecturer", "Automated-Software Testing", "/Image/idrees-ahmad.jpg", "https://www.example.com/idrees-ahmad", 4),
     new Teacher("Dr Tehmina Amjad", "Computing", "Information Technology", "Associate Professor", "Algebra", "/Image/tehmina-amjad.jpg", "https://www.example.com/tehmina-amjad", 4),
     new Teacher("Dr Tabassum Kanwal","Computing",  "Computer Science", "Associate Professor", "Algebra", "/Image/tabassum-kanwal.png", "https://www.example.com/tabassum-kanwal", 5),
     
 ];
 
 // Function to sort teachers based on their ranking
-function sortTeachersByRank() {
+function sortTeachersByRating() {
     teachers.sort(function(a, b) {
-        return a.rank - b.rank;
+        return b.rating - a.rating; // Sort in descending order
     });
 }
 
+
 // Function to create HTML elements for each teacher and append them to the document
 function createTeacherCards() {
-    sortTeachersByRank(); // Sort teachers based on their ranking
+    sortTeachersByRating(); // Sort teachers based on their ranking
 
     let rankingFrame = document.getElementById("rankingFrame");
     rankingFrame.innerHTML = ''; // Clear previous content
@@ -49,11 +50,20 @@ function createTeacherCards() {
         img.src = teacher.imageSrc;
         img.alt = teacher.name;
 
-        let rank = document.createElement("h2");
-        rank.textContent = `Ranked #${teacher.rank}`;
-
         let name = document.createElement("h3");
         name.textContent = teacher.name;
+
+        let rating = document.createElement("h4");
+        rating.textContent=`Rating: `;
+        rating.classList.add("rating");
+        for (let i = 0; i < 5; i++) {
+            let starIcon = document.createElement("i");
+            starIcon.classList.add("fas", "fa-star");
+            if (teacher.rating > i) {
+                starIcon.classList.add("filled");
+            }
+            rating.appendChild(starIcon);
+        }
 
         let faculty = document.createElement("p");
         faculty.textContent = `Faculty: ${teacher.faculty}`;
@@ -73,8 +83,8 @@ function createTeacherCards() {
         readMoreLink.target = "_blank";
 
         card.appendChild(img);
-        card.appendChild(rank);
         card.appendChild(name);
+        card.appendChild(rating);
         card.appendChild(faculty);
         card.appendChild(department);
         card.appendChild(designation);
@@ -83,6 +93,7 @@ function createTeacherCards() {
         rankingFrame.appendChild(card);
     });
 }
+
 
 // Call the function to create teacher cards when the page loads
 window.onload = function() {

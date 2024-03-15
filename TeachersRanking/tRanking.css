@@ -77,3 +77,23 @@ header{
   cursor: pointer;
 
 }
+.rating {
+  display: flex;
+  color: gold; /* Default color for filled stars */
+}
+
+.rating i {
+  margin-top: 5px;
+  font-size: 20px; /* Adjust star icon size */
+}
+
+/* Style for unfilled stars */
+.rating i.far.fa-star {
+  color:#ffffff; /* Color for unfilled stars */
+}
+.rating p{
+  display: inline;
+  color: black;
+  font-size: 20px;
+  font: bold;
+}

@@ -69,12 +69,28 @@ document.addEventListener("DOMContentLoaded", function() {
       resetStars(teachingMethodStars);
       resetStars(puntualityStars);
       resetStars(helpingAttitudeStars);
-      resetStars(labworkStars)
+      resetStars(labworkStars);
       // Reset more rating categories as needed
       commentInput.value = "";
       isRoleModelCheckbox.checked = false;
-      // Show confirmation message or redirect to another page
+      
+      // Create a message element
+      const messageElement = document.createElement("div");
+      messageElement.classList.add("submission-message");
+      messageElement.textContent = "Submission successful!";
+      
+      // Append the message element to the body
+      document.body.appendChild(messageElement);
+      
+      // Remove the message after a certain time
+      setTimeout(() => {
+        messageElement.remove();
+        // Redirect to another page
+        window.location.href = "/TeachersRanking/tRanking.html"; 
+      }, 2000); // Adjust the timeout (in milliseconds) as needed
     }
+    
+    
   
     subjectStars.forEach(star => {
       star.addEventListener("click", function() {
