@@ -27,6 +27,6 @@ Rankify is a web-based application accessible through any modern web browser. No
 **Contributing**
 Contributions to Rankify are welcome. If you're interested in contributing to the development of the platform, please fork the repository, make changes, and submit pull requests for review.
 
-Contact:
+**Contact**
 For any inquiries or support, please contact me at faizu6639@gmail.com.
 Thank You!
