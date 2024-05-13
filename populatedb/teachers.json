@@ -1,0 +1,155 @@
+{
+    "teachers":[ 
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=1825",
+            "name": "DR. ASIM MUNIR",
+            "email": "asim@iiu.edu.pk",
+            "designation": "Assistant Professor",
+            "qualification": "PhD",
+            "specialization": "Image Processing",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2023/02/asim-munir.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=1825",
+            "name": "MR. MUHAMMAD IMRAN SAEED",
+            "email": "imran@iiu.edu.pk",
+            "designation": "Assistant Professor",
+            "qualification": "MS",
+            "specialization": "Databases",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2023/02/muhammad-imran-saeed.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=1825",
+            "name": "DR. MUHAMMAD NADEEM",
+            "email": "nadeem@iiu.edu.pk",
+            "designation": "Assistant Professor",
+            "qualification": "PhD",
+            "specialization": "Image Restoration",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2021/08/Muhammad-Nadeem.png",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=1825",
+            "name": "DR. QAISAR JAVAID",
+            "email": "qaisar@iiu.edu.pk",
+            "designation": "Assistant Professor",
+            "qualification": "PhD",
+            "specialization": "Networks",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/images/faculties/fbas/cs-se/qaiser-javaid.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=1825",
+            "name": "DR. SYED MUHAMMAD SAQLAIN",
+            "email": "syed.saqlain@iiu.edu.pk",
+            "designation": "Assistant Professor",
+            "qualification": "PhD",
+            "specialization": "Artificial Intelligence",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2021/11/Muhammad-Saqlain.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "DR. MUHAMMAD ADEEL",
+            "email": "adeel@iiu.edu.pk",
+            "designation": "Assistant Professor",
+            "qualification": "PhD",
+            "specialization": "Information Retrieval",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2023/02/muhammad-adeel.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "DR. IMRAN KHAN ",
+            "email": "imran.khan@iiu.edu.pk",
+            "designation": "Assistant Professor",
+            "qualification": "PhD",
+            "specialization": "Data Mining",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/images/faculties/fbas/cs-se/imran-khan.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "DR. QAMAR ABBAS",
+            "email": "qamar.abbas@iiu.edu.pk",
+            "designation": "Assistant Professor",
+            "qualification": "PhD",
+            "specialization": "Artificial Intelligence",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2023/02/qamar-abbas.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "MR. SAMEER AKRAM",
+            "email": "sameer@iiu.edu.pk",
+            "designation": "Lecturer",
+            "qualification": "MSCS",
+            "specialization": "Computer Vision",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2021/08/Sameer-Akram.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "MR. IFTIKHAR ALI KHAN",
+            "email": "iftikhar.khan@iiu.edu.pk",
+            "designation": "Lecturer",
+            "qualification": "MSCS",
+            "specialization": "Data Mining",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2023/02/iftikhar-ali-khan.png",
+            "DepartmentId": ""
+         },
+         
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "DR. ANWAR GHANI",
+            "email": "anwar.ghani@iiu.edu.pk",
+            "designation": "Lecturer",
+            "qualification": "PhD",
+            "specialization": "Networks",
+            "profile_picture" : "",
+            "DepartmentId": "https://www.iiu.edu.pk/wp-content/uploads/2023/02/anwar-ghani.jpg"
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "MR. MAJID BASHIR",
+            "email": "majid.bashir@iiu.edu.pk",
+            "designation": "Lecturer",
+            "qualification": "MSCS",
+            "specialization": "Networks",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2021/08/Majid-Bashir.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "MR. IDREES AHMAD",
+            "email": "idrees.ahmad@iiu.edu.pk",
+            "designation": "Lecturer",
+            "qualification": "MS",
+            "specialization": "Software Engineering",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2023/02/idrees-ahmad.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "MR. AHSAN TANVEER",
+            "email": "ahsan.tanvir@iiu.edu.pk",
+            "designation": "Lecturer",
+            "qualification": "MS",
+            "specialization": "Networks",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2023/02/ahsan-tanvir.jpg",
+            "DepartmentId": ""
+         },
+         {
+            "original_profile": "https://www.iiu.edu.pk/?page_id=16239",
+            "name": "MR. JAHANZAIB ALI KHAN",
+            "email": "jahanzaib.ali@iiu.edu.pk",
+            "designation": "Lecturer",
+            "qualification": "MS",
+            "specialization": "Image Processing",
+            "profile_picture" : "https://www.iiu.edu.pk/wp-content/uploads/2024/02/Jahanzaib-Ali-Khan.jpg",
+            "DepartmentId": ""
+         }
+    ]
+}

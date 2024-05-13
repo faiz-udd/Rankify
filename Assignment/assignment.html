@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Rankify</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex; /* Enable flexbox */
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden; /* Avoids unwanted scrolling */
+        }
+        .sidebar {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            width: 250px;
+            flex-shrink: 0; /* Prevents the sidebar from shrinking */
+            overflow-y: auto; /* Enables vertical scrolling */
+        }
+        .sidebar a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #555;
+        }
+        .content {
+            flex-grow: 1; /* Takes up remaining space */
+            background-color: #f4f4f4;
+            padding: 20px;
+            overflow-y: auto; /* Enables vertical scrolling */
+        }
+        .student {
+            display: inline-block;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        .student img {
+            width: 150px;
+            height: 150px;
+            border-radius: 75px; /* Circular images */
+            margin-bottom: 10px;
+        }
+        .info {
+            font-size: 16px;
+        }
+        .project-intro {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h3>Tasks Navigation</h3>
+        <ol style="text-align: left;">
+            <Li><a href="/Assignment/assignment.html">Personal Profile</a></Li>
+            <li> <a href="/Assignment/calculator.html">Calculator</a></li>
+            <li><a href="/Faiz4430_ERD_ASS_03.pdf">ERD Diagram</a></li>
+            <li> <a href="/Assignment/generateOTP.html">Generate OTP</a></li>
+
+        </ol>
+    </div>
+    <div class="content">
+        <div class="project-intro">
+            <h1>Welocm to Rankify</h1>
+            <p>This project is brought to you by students of the CS Department, focusing on Teacher accountability.</p>
+        </div>
+        <div class="student">
+            <a href="#">
+                <img src="/Image/faiz.jpg" alt="Faiz uddin">
+            </a>
+            <div class="info">
+                Name: Faiz uddin<br>
+                Reg_No: 4430<br>
+                Program: CS<br>
+                Section: A
+            </div>
+        </div>
+        <div class="student">
+            <a href="#">
+                <img src="Atique.jpeg" alt="Abdul Latif">
+            </a>
+            <div class="info">
+                Name: Abdul Latif<br>
+                Reg_No: 4471<br>
+                Program: CS<br>
+                Section: A
+            </div>
+        </div>
+        <div class="student">
+            <a href="#">
+                <img src="Usaid.jpeg" alt="Huzaifa">
+            </a>
+            <div class="info">
+                Name: Huzaifa<br>
+                Reg_No: 4431<br>
+                Program: CS<br>
+                Section: A
+            </div>
+        </div>
+    </div>
+</body>
+</html>

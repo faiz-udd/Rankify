@@ -1,0 +1,31 @@
+{
+    "faculties": [
+        {
+            "name": "Faculty of Computing and Information Technology",
+            "departments": [
+                {
+                    "name": "Department of Computer Science",
+                    "subjects": ["Digital Logic and Design","Multivariate Calculus",
+                       "Computer Organization and Assembly Language","Differential Equation",
+                       "Artificial Intelligence", "Human Computer Interaction",
+                       "Theory of Automata","Numerical Computing",
+                       "Compiler Construction","Parallel & Distributed Computing"]
+                },
+                {
+                    "name": "Department of Software Engineering",
+                    "subjects": ["Digital Logic & Computer Architecture","Introduction to Psychology",
+                        "Software Requirements Engineering","Operations Research","Software Design and Architecture",
+                        "Formal Methods in Software Engineering","Software Construction & Development","Software Quality Engineering","Software Project Management",
+                        "Web Engineering","Software Re Engineering","Human Computer Interaction"]
+                },
+                {
+                    "name": "Department of Information Technology",
+                    "subjects": ["Information Technology Infrastructure","Introduction to Management",
+                        "Operations Research","Software Requirements Engineering","Database Administration and Management",
+                        "Systems and Network Administration","Web Technologies","Virtual Systems and Services",
+                        "Cyber Security","Enterprise Systems","Information Technology Project Management"]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #codeDisplay {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Random 4-Digit Code Generator</h2>
+    <button id="generateButton" onclick="toggleGenerating()">Generate</button>
+    <p id="codeDisplay"></p>
+
+    <script>
+        var generating = false;
+        var lastGeneratedCode = null;
+
+        // Function to generate a 4-digit code continuously until the exit button is clicked
+        function toggleGenerating() {
+            if (!generating) {
+                generating = true;
+                document.getElementById("generateButton").textContent = "Stop";
+                document.getElementById("generateButton").style.backgroundColor = "#f44336"; // Change button color to red
+                generateCode();
+            } else {
+                generating = false;
+                document.getElementById("generateButton").textContent = "Generate";
+                document.getElementById("generateButton").style.backgroundColor = "#4CAF50"; // Change button color back to green
+            }
+        }
+
+        // Function to generate a 4-digit code
+        function generateCode() {
+            var code = Math.floor(1000 + Math.random() * 9000);
+            document.getElementById("codeDisplay").innerHTML = 'Generated Code: ' + code;
+            lastGeneratedCode = code;
+
+            if (generating) {
+                setTimeout(generateCode, 1000); // Generate a new code every second
+            }
+        }
+
+        // Function to close the window
+        function exitWindow() {
+            if (lastGeneratedCode !== null) {
+                document.getElementById("codeDisplay").innerHTML = 'Last Generated Code: ' + lastGeneratedCode;
+            }
+            generating = false;
+            window.close(); // This will close the current window. Note: This might not work in all browsers due to security restrictions.
+        }
+    </script>
+</body>
+</html>
