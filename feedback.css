@@ -1,0 +1,224 @@
+/* feedback.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.feedback-container {
+    width: 100%;
+    margin: 5px auto;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+}
+
+.feedback-container h2 {
+    text-align: center;
+    color: #000102;
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+.rating label {
+    font-weight: bold;
+    display: block;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+}
+
+.star {
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.star:hover,
+.star.active {
+    color: #ffdd00;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+ /* Add your custom CSS styles here */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #021324;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: #021324;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+#submitFeedback{
+    margin-bottom: 20px;
+}
+
+.inactive {
+    background-color: #ccc; /* Change to the desired inactive color */
+    color: #666; /* Change to the desired inactive text color */
+    cursor: not-allowed; /* Change cursor to indicate unclickable */
+}
+
+/* Style for the button hover message */
+#submitFeedback:hover::after {
+    content: "Login to submit feedback"; /* Message displayed upon hover */
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8); /* Change to desired background color */
+    color: #fff; /* Change to desired text color */
+    padding: 5px;
+    border-radius: 5px;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* /added new unverified */
+/* feedback.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.feedback-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.feedback-container h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.feedback-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.rating {
+    margin-bottom: 20px;
+}
+
+.rating label {
+    font-weight: bold;
+    display: block;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+}
+
+.star {
+    font-size: 25px;
+    color: #ccc;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.star:hover,
+.star.active {
+    color: #ffdd00;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Code </title>
+    <link rel="stylesheet" href="verifyCode.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/Image/logo-iiui.png" alt="IIUI Logo" class="logo">
+        <h2>IIUI Verify Code</h2>
+        <form action="verifyCode.js" method="POST" id="verifyForm">
+            <input type="email" name="email" id="email" placeholder="Enter your IIUI email" required>
+            <input type="text" id="token" placeholder="Enter Verification Code" required>
+            <input type="submit" value="Verify">
+        </form>
+    </div>
+ 
+    <script src="verifyCode.js"></script>
+</body>
+</html>

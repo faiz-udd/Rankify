@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rankify | TeacherRanking</title>
+  <link rel="stylesheet" href="tRanking.css">
+  <!-- external css for Ranking stars -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Header goes here. -->
+  <header>
+    <h1>Teacher Ranking List</h1>
+  </header>
+  <!-- Here Ends here. -->
+  <!-- main section starts here. -->
+  <main>
+    <div class="filters">
+      <label for="faculty">Select Faculty:</label>
+      <select id="faculty">
+        <option value="all">All</option>
+        <option value="Computing">Computing</option>
+        <!-- Add more faculties as needed -->
+      </select>
+
+      <label for="department">Select Department:</label>
+      <select id="department">
+        <option value="all">All</option>
+        <!-- Departments will be dynamically populated based on faculty selection -->
+      </select>
+    </div>
+    <div id="teacher-list" class="teacher-list"></div>
+  </main>
+  <script src="../apiCalls/apiCalls.js"></script>
+  <script src="tranking.js"></script>
+</body>
+</html>

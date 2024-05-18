@@ -1,0 +1,196 @@
+body{
+    background-color: #ccc;
+}
+
+/* CSS for Teacher Profile */
+main{
+    padding-inline: 10%;
+    padding-block: 10px;
+    border: 10px;
+    box-shadow: black;
+}
+.teacherProfile{
+    align-self: center;
+    background-color: aliceblue;
+    align-items: center;
+   
+    border-radius: 10px;
+}
+.teacher-profile {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.teacher-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.teacher-info {
+    flex-grow: 1;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.teacher-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.teacher-info p {
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.teacher-info a {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20;
+    font: bold;
+}
+
+/* CSS for filled star icons */
+.teacher-rating {
+    color: gold; /* Color for filled stars */
+}
+
+.teacher-rating i {
+    font-size: 20px; /* Adjust star icon size */
+}
+
+/* CSS for unfilled star icons */
+.teacher-rating i.fas.fa-star:not(.filled) {
+    color: #ccc; /* Color for unfilled stars */
+}
+
+/* Additional styling for teacher profile section */
+.teacherProfile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.teacher-avatar {
+    margin-right: 20px;
+}
+
+.teacher-info {
+    flex-grow: 1;
+}
+
+.teacher-info h1 {
+    margin: 0;
+}
+
+.teacher-info p {
+    margin: 5px 0;
+}
+
+.teacher-info a {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Additional styles for hover effects */
+.teacherProfile:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow on hover */
+    transition: box-shadow 0.3s ease;
+}
+/* CSS for Feedback Button. */
+#giveFeedbackBtn{
+    padding-inline: 20px;
+    padding-block: 5px;
+    margin-top: 20px;
+    display: inline;
+    align-self: center;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font: bold;
+}
+#giveFeedbackBtn:hover{
+    color: aqua;
+
+}
+
+
+
+
+
+/* CSS for student feedback section */
+.studentFeedback {
+    margin-top: 20px;
+    background-color: aliceblue;
+    padding-inline: 10%;
+    padding-block: 10px;
+    border: 10px;
+    box-shadow: black;
+    border-radius: 10px;
+
+}
+
+.studentFeedback h2 {
+    margin-bottom: 10px;
+}
+
+.feedback-list {
+    margin-bottom: 20px;
+}
+
+.feedback-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.feedback-item:last-child {
+    border-bottom: none;
+}
+
+.feedback-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.feedback-content {
+    flex-grow: 1;
+}
+
+.feedback-author {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.feedback-rating {
+    margin-bottom: 5px;
+}
+
+.feedback-rating i {
+    color: gold; /* Gold color for filled stars */
+}
+/* CSS for unfilled star icons */
+.feedback-rating i.fas.fa-star:not(.filled) {
+    color: #ccc; /* Color for unfilled stars */
+}
+
+.feedback-comment {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
