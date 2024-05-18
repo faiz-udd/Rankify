@@ -7,8 +7,9 @@
     <title>Rankify | Home 
     </title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/Slider/slider.css">
-    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="Slider/slider.css">
+    <link rel="stylesheet" href="footer/footer.css">
+    <script src="/footer/footer.js"></script>
     <!-- External Css for Stars  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -19,13 +20,7 @@
         <span class="navigationLists">
             <a class="navList" href="index.html" id="homeNav"><strong>HOME</strong></a>
             <a class="navList" href="tRanking.html" id="teacherRankingNav"><strong>RANKING EDUCATORS</strong></a>
-            <a class="navList" href="/Assignment/assignment.html" id="Assignments"><strong>ASSIGNMENTS</strong></a>
-        </span>
-        <span class="search_btn">
-            <form action="/search" method="get">
-                <input type="text" name="q" placeholder="Search...">
-                <button type="submit">Search</button>
-            </form>
+            <a class="navList" href="#" id="universitiesRankingNav"><strong>UNIVERSITIES RANKINGS</strong></a>
         </span>
         <span class="navBtns">
             <a class="navbarBtn" href="login.html"  id="loginBtn">Login</a>
@@ -40,7 +35,7 @@
             <div class="slideFrame">
                 <div class="slider">
                     <div class="slide" id="slide1">
-                      <img src="/Slider/slides/3.jpg" />
+                      <img src="Slider/slides/3.jpg" />
                       <!--Slider Description example-->
                        <div class="slide-desc">
                           <h1>Students Feedback</h1>
@@ -57,7 +52,7 @@
                                     </div>
                     </div>
                     <div class="slide" id="slide3">
-                      <img src="/Slider/slides/2.jpg" />
+                      <img src="Slider/slides/3.jpg" />
                                     <div class="slide-desc">
                                         <h1>Best Universities</h1>
                                         <p>"Unlock the Best Universities Through Student Experience! Let peer reviews guide your choice for academic excellence. Explore top-rated institutions chosen by students like you!" </p>
@@ -135,14 +130,15 @@
                 <div class="footer-column">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="https://www.linkedin.com" target="_blank"><img src="/Image/linkedin_icon.png" style="height: 15px; width: 15px;" alt="LinkedIn"> LinkedIn</a> </li>
-                        <li><a href="https://www.github.com" target="_blank"><img src="/Image/github_icon.png" style="height: 15px; width: 15px;" alt="GitHub"> Github</a></li>
-                        <li><a href="https://www.kaggle.com" target="_blank"><img src="/Image/kaggle_icon.png" style="height: 15px; width: 15px;" alt="Kaggle"> Kaggle</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact Us</h3>
-                    <a href="mailto:example@gmail.com">Email</a>
+                    <p>Email: info@example.com</p>
                     <p>Phone: +1234567890</p>
                 </div>
             </div>
@@ -150,8 +146,7 @@
         </div>
     </footer>
     <script src="apiCalls/apiCalls.js"></script>
-    <script src="/Slider/slider.js"></script>
+    <script src="Slider/slider.js"></script>
     <script src="script.js"></script>
-    <script src="footer/footer.js"></script>
 </body>
 </html>

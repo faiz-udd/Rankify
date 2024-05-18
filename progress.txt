@@ -1,8 +1,0 @@
-Date 26/03/2024
-
-Pushing this to github
-need to complete route get All teacher of a department with ratings
-
-Date 04/05/2024
-Setuped Aiven Database and Populated with data.
-Setuped Route Logging function.
