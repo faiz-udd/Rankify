@@ -1,5 +1,4 @@
 /* Add some style to the navigation bar */
-
 /* styles.css */
 .navbar {
     background-color:rgb(4, 92, 48);
@@ -22,7 +21,7 @@
     background-color: rgb(219, 217, 231);
 }
 .navBtns{
-margin-left: 40%;
+margin-left: 51%;
 }
 .navbarBtn{
     display: inline-block;
