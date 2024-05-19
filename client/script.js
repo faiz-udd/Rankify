@@ -12,6 +12,8 @@ let viewallTeacherBtn = document.querySelector("#ViewallTeachersBtn");
 let viewTeachers=document.querySelector("#GiveFeedbackSlideBtn")
 let homeNavigation = document.querySelector("#homeNav");
 let teacherListNavigation = document.querySelector("#teacherRankingNav");
+let findBestUniversityBtn = document.querySelector("#FindBestUniBtn");
+let ChooseBestSubject = document.querySelector("#ChooseCoursesBtn")
 
   // Define Teacher class
 function Teacher(name,faculty, department, designation, specialization, profile_picture, original_profile, rating) {
@@ -163,6 +165,15 @@ homeNavigation.addEventListener("click", function(event) {
 teacherListNavigation.addEventListener("click", function(event) {
     event.preventDefault(); // Prevent the default behavior of the link
     window.open("tRanking.html", "_blank"); // Open the login page in a new tab
+});
+findBestUniversityBtn.addEventListener('click', function(){
+    event.preventDefault();
+    window.open("https://www.alluniversity.info/pakistan", "_blank" )
+
+});
+ChooseBestSubject.addEventListener('click', function(){
+    // event.defaultPrevented();
+    window.open("https://www.idp.com/pakistan/how-to-choose-a-course", "_blank");
 });
 
 

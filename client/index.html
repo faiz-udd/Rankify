@@ -7,8 +7,8 @@
     <title>Rankify | Home 
     </title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Slider/slider.css">
-    <link rel="stylesheet" href="footer/footer.css">
+    <link rel="stylesheet" href="/Slider/slider.css">
+    <link rel="stylesheet" href="/footer/footer.css">
     <script src="/footer/footer.js"></script>
     <!-- External Css for Stars  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -20,11 +20,12 @@
         <span class="navigationLists">
             <a class="navList" href="index.html" id="homeNav"><strong>HOME</strong></a>
             <a class="navList" href="tRanking.html" id="teacherRankingNav"><strong>RANKING EDUCATORS</strong></a>
-            <a class="navList" href="#" id="universitiesRankingNav"><strong>UNIVERSITIES RANKINGS</strong></a>
+            <a class="navList" href="https://en.wikipedia.org/wiki/Rankings_of_universities_in_Pakistan" target="_blank" id="universitiesRankingNav"><strong>UNIVERSITIES RANKINGS</strong></a>
         </span>
         <span class="navBtns">
             <a class="navbarBtn" href="login.html"  id="loginBtn">Login</a>
             <a class ="navbarBtn" href="signup.html" id="signupBtn">Sign Up</a>
+            <button class="navbarBtn" id="logoutBtn" style="display: none; align-self: self-end;">Logout</button>
         </span>
     </nav>
     <!-- our Navigation bar Ends Here -->
@@ -35,7 +36,7 @@
             <div class="slideFrame">
                 <div class="slider">
                     <div class="slide" id="slide1">
-                      <img src="Slider/slides/3.jpg" />
+                      <img src="/Slider/slides/3.jpg" />
                       <!--Slider Description example-->
                        <div class="slide-desc">
                           <h1>Students Feedback</h1>
@@ -52,7 +53,7 @@
                                     </div>
                     </div>
                     <div class="slide" id="slide3">
-                      <img src="Slider/slides/3.jpg" />
+                      <img src="/Slider/slides/2.jpg" />
                                     <div class="slide-desc">
                                         <h1>Best Universities</h1>
                                         <p>"Unlock the Best Universities Through Student Experience! Let peer reviews guide your choice for academic excellence. Explore top-rated institutions chosen by students like you!" </p>
@@ -90,8 +91,8 @@
                             </div>
                             <div class="paragraph">
                                 <h2><strong>Embarking on Your University Journey in Pakistan? Find Your Perfect Fit Here!</strong></h2>
-                                <p> <strong>Joining a university in Pakistan? Discover the best fit for you by exploring our comprehensive rankings and firsthand student feedback on professors and institutions. With over 450,000 graduates yearly, make an informed decision for your academic journey.</strong></p>
-                                <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Discover More</button>
+                                <p> <strong>Joining a university in Pakistan? Discover the best fit for you by exploring our comprehensive list of Pakistan's best institutions.</strong></p>
+                                <button class ="button" id="FindBestUniBtn">Discover More</button>
                             </div>
                         </div>
                     </div>
@@ -102,9 +103,9 @@
                         <div class="container">
                             <div class="content-wrapper">
                                 <div class="paragraph">
-                                    <h2><strong>Embarking on Your University Journey in Pakistan? Find Your Perfect Fit Here!</strong></h2>
-                                    <p> <strong>Joining a university in Pakistan? Discover the best fit for you by exploring our comprehensive rankings and firsthand student feedback on professors and institutions. With over 450,000 graduates yearly, make an informed decision for your academic journey.</strong></p>
-                                    <button class ="button" id="goTofeedbackStudentFeedbackPageBtn">Discover More</button>
+                                    <h2><strong>Want to learn more about what to choose for undergraduate studies? Find Your Perfect Fit Here!</strong></h2>
+                                    <p> <strong>Joining a university in Pakistan? Discover the best academic journey and educate yourself on what subject to choose. With over 450,000 graduates yearly, make an informed decision for your academic journey.</strong></p>
+                                    <button class ="button" id="ChooseCoursesBtn">Learn More</button>
                                 </div>
                                 <div class="image">
                                     <img src="/Slider/slides/6.jpg" alt="Your Image">
@@ -129,12 +130,18 @@
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                    <div class="social-login">
+                        <button id="facebook_page" class="social-btn" onclick="window.open('https://www.facebook.com', '_blank');">
+                            <img src="/Image/facebook-icon.png" alt="Facebook" class="social-icon"> Facebook
+                        </button>
+                        <button id="google-page" class="social-btn" onclick="window.open('https://www.google.com', '_blank');">
+                            <img src="/Image/google-logo.png" alt="Google" class="social-icon">Google
+                        </button>
+                        <button id="Instagram_page" class="social-btn" onclick="window.open('https://www.instagram.com', '_blank');">
+                            <img src="/Image/instagram-logo.jpg" alt="Insta" class="social-icon">Instagram
+                        </button>
+                    </div>
+                    
                 </div>
                 <div class="footer-column">
                     <h3>Contact Us</h3>
@@ -146,7 +153,7 @@
         </div>
     </footer>
     <script src="apiCalls/apiCalls.js"></script>
-    <script src="Slider/slider.js"></script>
-    <script src="script.js"></script>
+    <script src="/Slider/slider.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
