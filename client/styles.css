@@ -1,61 +1,81 @@
 /* Add some style to the navigation bar */
 /* styles.css */
+
+/* Add some style to the navigation bar */
 .navbar {
-    background-color:rgb(4, 92, 48);
+    display: flex;
+    align-items: center; /* Align items vertically */
+    background-color: #2ec479;
     color: white;
     padding: 20px;
 }
-.navigationLists{
+
+.logo {
+    height: 40px; /* Adjust the height to match the text */
+    margin-right: 20px; /* Space between the logo and navigation items */
+}
+
+.navigationLists {
+    display: flex;
+    flex-grow: 1;
+    align-items: center; /* Align items vertically */
     margin-left: 30px;
 }
-.navList{
-    align-items: center;
-    margin-left: 20px;
-    cursor: pointer;
-    font-family: sans-serif;
-    font: bold;
-    color: white;
+
+.navList {
+    margin-left: 15px;
+    padding: 10px 20px;
     text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Recommended font family */
+    font-size: 16px; /* Recommended font size */
+    box-shadow: 0 4px #0056b3; /* 3D effect */
+    transition: all 0.2s ease; /* Smooth transition */
 }
-.navList:hover{
+
+.navList:hover {
     background-color: rgb(219, 217, 231);
 }
-.navBtns{
-margin-left: 51%;
+
+.navBtns {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-left: auto; /* Push the buttons to the right */
 }
-.navbarBtn{
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid #333;
-    background-color: #ffffff;
-    color: #333;
+
+.navbarBtn {
+    margin-left: 15px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 10%;
-    font-style: bold;
+    color: white;
+    background-color: #007BFF;
+    border: 1px solid #0056b3;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif; /* Recommended font family */
+    font-size: 16px; /* Recommended font size */
+    box-shadow: 0 4px #0056b3; /* 3D effect */
+    transition: all 0.2s ease; /* Smooth transition */
 }
-.navbarBtn:hover{
+
+.navbarBtn:hover {
     background-color: #2214a1;
     color: #fff;
 }
-.sign-in, .sign-up {
-    background-color: #6B8E23;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+
+.navbarBtn:active {
+    box-shadow: 0 2px #0056b3; /* Reduce shadow size on click */
+    transform: translateY(2px); /* Move button down */
 }
 
-/* Add some style to the logo */
-.logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
 .button:hover {
     background-color: #07a744;
     color: #fff;
 }
-/* Navigation bar ends here */
 
 /* Add some style to the main body */
 .main {

@@ -1,18 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #dbe9e8;
     margin: 0;
     padding: 0;
 }
 
-.container {
+.signup-container {
     max-width: 500px;
     margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    background-color: #2ec479;
+    padding: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 h2 {
     text-align: center;
@@ -21,6 +22,7 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 label {
@@ -35,7 +37,7 @@ input[type="submit"] {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 input[type="text"]:focus,
@@ -56,4 +58,7 @@ input[type="submit"] {
 .error-message {
     color: red;
     margin-top: 5px;
+}
+#form_para{
+    align-self: center;
 }
