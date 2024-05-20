@@ -1,23 +1,86 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verify Code </title>
+    <title>Rankify|VerifyEmail</title>
     <link rel="stylesheet" href="verifyCode.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="footer/footer.css">
     <link rel="icon" href="Image/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <img src="/Image/logo-iiui.png" alt="IIUI Logo" class="logo">
+    <Header>
+          <!-- Our Navigation Bar -->
+    <nav class="navbar">
+        <img src="Image/logo.jpeg" alt="logo" class="logo">
+        <span class="navigationLists">
+            <a class="navList" href="index.html" id="homeNav"><strong>HOME</strong></a>
+            <a class="navList" href="tRanking.html" id="teacherRankingNav"><strong>RANKING EDUCATORS</strong></a>
+            <a class="navList" href="https://en.wikipedia.org/wiki/Rankings_of_universities_in_Pakistan" target="_blank" id="universitiesRankingNav"><strong>UNIVERSITIES RANKINGS</strong></a>
+        </span>
+        <span class="navBtns">
+            <a class="navbarBtn" href="login.html"  id="loginBtn">Login</a>
+            <a class ="navbarBtn" href="signup.html" id="signupBtn">Sign Up</a>
+            <button class="navbarBtn" id="logoutBtn" style="display: none; align-self: self-end;">Logout</button>
+        </span>
+    </nav>
+    <!-- our Navigation bar Ends Here -->
+    </Header>
+
+
+    <!-- Our Content goes here. -->
+
+    <!-- Our Content Ends here. -->
+
+    <div class="verify_code_container">
+        <img src="/Image/logo-iiui.png" alt="IIUI Logo" class="logo_iiui">
         <h2>IIUI Verify Code</h2>
         <form action="verifyCode.js" method="POST" id="verifyForm">
             <input type="email" name="email" id="email" placeholder="Enter your IIUI email" required>
             <input type="text" id="token" placeholder="Enter Verification Code" required>
-            <input type="submit" value="Verify">
+            <input type="submit" id="verifyCodeBtn" value="Verify">
         </form>
     </div>
+
+     <!-- Footer goes Here -->
+     <footer class="footer">
+        <div class= "container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="about-content">
+                        <h2>About Us</h2>
+                        <p>Welcome to our platform where students' voices matter! We are dedicated to providing a transparent and reliable platform where students can rank universities and teachers based on their experiences and feedback.</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <div class="social-login">
+                        <button id="facebook_page" class="social-btn" onclick="window.open('https://www.facebook.com', '_blank');">
+                            <img src="/Image/facebook-icon.png" alt="Facebook" class="social-icon"> Facebook
+                        </button>
+                        <button id="google-page" class="social-btn" onclick="window.open('https://www.google.com', '_blank');">
+                            <img src="/Image/google-logo.png" alt="Google" class="social-icon">Google
+                        </button>
+                        <button id="Instagram_page" class="social-btn" onclick="window.open('https://www.instagram.com', '_blank');">
+                            <img src="/Image/instagram-logo.jpg" alt="Insta" class="social-icon">Instagram
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1234567890</p>
+                </div>
+            </div>
+            <p>© 2024 Rankify IIUI Pakistan. All Rights Reserved</p>
+        </div>
+    </footer>
+
  
     <script src="verifyCode.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

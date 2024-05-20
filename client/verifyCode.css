@@ -5,20 +5,21 @@ body {
     background-color: #f2f2f2;
 }
 
-.container {
+.verify_code_container {
     width: 100%;
-    max-width: 500px;
-    margin: 100px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 10px;
+    background-color: #2ec479;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.logo {
-    width: 150px;
+.logo_iiui {
+    width: 100px;
     margin-bottom: 20px;
+    border-radius: 50%;
 }
 
 input[type="email"] {
@@ -26,7 +27,7 @@ input[type="email"] {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 15px;
     box-sizing: border-box;
 }
 input[type="text"] {
@@ -34,7 +35,7 @@ input[type="text"] {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 15px;
     box-sizing: border-box;
 }
 
@@ -45,11 +46,27 @@ input[type="submit"] {
     background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+#verifyCodeBtn{
+    margin-bottom: 30px;
+    text-decoration: none;
+    width: 70%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }

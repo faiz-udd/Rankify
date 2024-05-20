@@ -170,7 +170,7 @@
 /* CSS for unfilled star icons */
 /* .rating .fas.fa-star:not(.filled) {
     color: #ccc; /* Color for unfilled stars */
-/* } */ */
+/* } */
 
 
 
@@ -181,7 +181,7 @@
   }
   
   .container {
-    max-width: 1200px; /* Adjust container width as needed */
+    max-width: 100%; /* Adjust container width as needed */
     margin: 0 auto; /* Center the container */
     overflow: hidden; /* Clearfix */
     box-shadow: #333;
@@ -258,5 +258,8 @@
 }
 #form_para{
     align-self: center;
+}
+.general-content{
+    width: 100%;
 }
   
