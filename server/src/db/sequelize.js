@@ -22,7 +22,7 @@ const sequelize = new Sequelize(db_name, db_user, db_pass, {
 module.exports = sequelize;
 
 
-//AIVEN PG
+// AIVEN PG
 
 // const fs = require('fs');
 // const { Sequelize } = require('sequelize');

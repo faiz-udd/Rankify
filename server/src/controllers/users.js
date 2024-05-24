@@ -7,8 +7,7 @@ const bcrypt  = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const Token = require('../models/token');
 const generateRandomCode = require('../utils/generateCode');
-
-// import sendVerificationCode from '../authentications/emailService';
+const { sendVerificationEmail } = require('../services/mail');
 
 const JWT_SECRET = process.env.JWT_SECRET;
 
@@ -44,13 +43,20 @@ const sendCode = async (req, res) => {
          userPass: req.body.password,
          token: generateRandomCode()
        };
-    console.log("Token User = ", user);
+      console.log("Token User = ", user);
        const resp = await Token.create(user);
-    //    const sendToken = await sendVerificationCode(user.email);
-    //    if(sendToken.error) {
-    //        return res.status(500).send({"message":"something went wrong in userController sendCode"});
-    //    }
+    
+       const sendToken = await sendVerificationEmail({
+        name: req.body.name,
+        email: req.body.email,
+        token: user.token
+       });
+       
+       if(sendToken.error) {
+           return res.status(500).send({"message":"something went wrong in userController sendCode"});
+       }
        console.log(user);
+       
        return res.status(200).send("Verification Code sent successfully, please check your email address");
 
     }  catch(err) {

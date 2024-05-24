@@ -5,7 +5,17 @@ const reviewURL = 'http://127.0.0.1:3000/api/reviews/'
 
 document.addEventListener("DOMContentLoaded", async function() {
    
-    // get review and ratings data
+    const giveFeedbackBtn = document.getElementById('giveFeedbackBtn');
+
+    giveFeedbackBtn.addEventListener('click', (event) => {
+        event.preventDefault();  // Prevent the default link click behavior
+
+        const teacherData = getTeacherDataFromUrlParams();
+        const queryParams = new URLSearchParams(teacherData).toString();
+
+        // Redirect to feedback page with teacher data as URL params
+        window.location.href = `feedback.html?${queryParams}`;
+    });
 
    // dummy data
     let feedbackData = []
@@ -38,6 +48,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     document.getElementById("teacher-department").textContent = "Department: " + teacherData.department;
     document.getElementById("teacher-position").textContent = "Position: " + teacherData.designation;
     document.getElementById("teacher-expertise").textContent = "Expertise: " + teacherData.specialization;
+    // select give feedback link
+
 
     // Generate star icons for rating
     const ratingContainer = document.getElementById("teacher-rating");
@@ -89,7 +101,7 @@ async function getRatingAndReview(ratingURL,reviewURL) {
        // get rating data about given teacher
        const teacher_rating = await getTeacherData(ratingUrl);
        const teacher_review = await getTeacherData(reviewUrl);
-       if(!teacher_rating || !teacher_review) {
+       if(!teacher_rating || !teacher_review ) {
         return null;
        }
       return [teacher_rating, teacher_review]
@@ -103,6 +115,10 @@ async function getRatingAndReview(ratingURL,reviewURL) {
 async function getTeacherData(url) {
     try {
         const response = await fetch(url);
+        console.log("code ",response.status)
+        if(response.status === 500) {
+            alert('something went wrong')
+        }
         const data = await response.json();
         return data;
     } catch (error) {
@@ -134,6 +150,7 @@ function displayStudentFeedback(feedbackData) {
 
 // Function to generate star rating based on a numerical rating
 function generateStarRating(rating) {
+    
     let stars = '';
     for (let i = 0; i < 5; i++) {
         if (rating > i) {

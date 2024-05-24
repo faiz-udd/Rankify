@@ -34,9 +34,9 @@ document.addEventListener("DOMContentLoaded", async function() {
         let apiResponse = await fetchTop10Teachers(top10url);
         teachers.sort((a, b) => b.rating - a.rating);
         if (apiResponse) {
-            apiResponse[0].teachers.forEach(teacher => {
-                teacher.rating = Math.round((teacher.rating -5));
-            });
+            // apiResponse[0].teachers.forEach(teacher => {
+            //     teacher.rating = Math.round((teacher.rating -5));
+            // });
         }
         console.log(apiResponse !== null ? apiResponse[0].teachers : teachers);
         

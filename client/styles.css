@@ -168,9 +168,9 @@
 }
 
 /* CSS for unfilled star icons */
-/* .rating .fas.fa-star:not(.filled) {
-    color: #ccc; /* Color for unfilled stars */
-/* } */
+.rating .fas.fa-star:not(.filled) {
+    color:gold,#cccccc; /* Color for unfilled stars */
+}
 
 
 
